@@ -8,7 +8,6 @@ model =  load("model")
 tfidf_vect = TfidfVectorizer(sublinear_tf=True)
 df=pd.read_csv("lemmatized_data_reduced.csv",encoding ="ISO-8859-1",names=["first_index","text","target","Text","text_final"])
 df=df.iloc[1:]
-print(df.head(5))
 tfidf_vect.fit(df['text_final'])
 
 
@@ -25,8 +24,6 @@ def res():
     prediction= model.predict(tfidf_vect.transform([sentence]))
     return render_template('result.html',data=prediction[0])
     
-
-
 
 if __name__ =="__main__":
     app.run(host='0.0.0.0')
