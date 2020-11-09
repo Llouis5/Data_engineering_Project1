@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment analyser</title>
+</head>
+<body backgroundcolor="#FAFAFA">
+    <center>
+        <h1> Sentiment analyser </h1>
+        
+        <form method="POST" action="{{url_for('res')}}">
+           Sentence: <input type ="text" name="sentence" placeholder="Enter sentence"><br>
+            <input type="submit"value="predict">
+        </form>
+
+    </center>
+    
+</body>
+</html>
