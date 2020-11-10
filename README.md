@@ -19,9 +19,7 @@ The Webinterface is simple using simple html code and Jinja for the model to dis
 Upon arriving to the page, the user can press the button and check its answer. One amelioration could have been to add limitations to what the user can enter (i.e: no numbers)
 Upon pressing the button, the user goes to another page getting the result of his prediction
 
-3) 
-Unfortunately the container doesn't seem to work. Everything is built without problems, the app.py is ran correctly, however, upon going to 0.0.0.0:5000 , it doesn't work.
+3) Unfortunately the container doesn't seem to work. Everything is built without problems, the app.py is ran correctly, however, upon going to 0.0.0.0:5000 , it doesn't work.
 Even for localhost:5000 
 
-4)
-Unit tests are here to test if the page is respondant and if the model returns a good value for one of the top 5 Positive sentiment word: "Great"
+4) Unit tests are here to test if the page is respondant and if the model returns a good value for one of the top 5 Positive sentiment word: "Great"
