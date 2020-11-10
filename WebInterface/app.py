@@ -20,9 +20,12 @@ def index():
 @app.route('/predict',methods=["POST"])
 def res():
     sentence = request.form['sentence']
-    
-    prediction= model.predict(tfidf_vect.transform([sentence]))
-    return render_template('result.html',data=prediction[0])
+    print(sentence.isalpha())
+    if (sentence==""):
+        return render_template('home.html')
+    else:
+        prediction= model.predict(tfidf_vect.transform([sentence]))
+        return render_template('result.html',data=prediction[0])
     
 
 if __name__ =="__main__":
