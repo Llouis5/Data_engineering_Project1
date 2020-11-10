@@ -1,6 +1,8 @@
 # Data_engineering_Project1
 Data_engineering_Project1 for M2 course
 
+Trello: https://trello.com/b/Ekn4hWBx/data-engineering-ii
+
 Project included :
 -Creation of a sentiment analyser in python with a score > 0.8 
 -Creation of a webinterface for a user to try the model
